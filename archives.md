@@ -36,3 +36,7 @@ File Table:
 | Offset | Name | DataType | Notes |
 | --- | --- | --- | --- |
 | 0x0 | Offset and Size | u32 | Offset = (OffSize >> Shift Factor) * Pad Factor<br />Size = (OffSize & Mask) * Mul Factor |
+
+Credits:
+- Onepiecefreak
+- Alpha
