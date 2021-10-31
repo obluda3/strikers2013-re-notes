@@ -26,24 +26,9 @@ callFunction GetPLYIDToPlayerEntryTeam__Fii
 cmpwi r3, 0
 beq func_epilogue
 
-; Check if San is unlocked
-mr r4, r15
-li r3, 0x16c
-callFunction GetPLYIDToPlayerEntryTeam__Fii
-cmpwi r3, 0
-beq func_epilogue
-
 ; Compare Fran - Asta kizuna
 lwz r3, 0(r22)
 li r4, 0x16b ; Asta
-callFunction Savedata_getPlayeData_KizunaData__Fii
-lha r0, 0(r3)
-cmpwi r0, 0x32 
-blt func_epilogue
-
-; Compare Fran - San kizuna
-lwz r3, 0(r22)
-li r4, 0x16c ; San
 callFunction Savedata_getPlayeData_KizunaData__Fii
 lha r0, 0(r3)
 cmpwi r0, 0x32 
