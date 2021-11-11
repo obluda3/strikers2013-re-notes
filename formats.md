@@ -37,7 +37,6 @@ Each field is structured as follows:
 | --- | --- | --- | --- |
 | 0x0 | Field Name | u32 | |
 | 0x4 | Length | u32 | |
-| 0x8 | Arguments | u32 | Length/4 |
 
 Here are the different fields:
 | Field | Description |
@@ -71,6 +70,10 @@ Here are the different fields:
 | IMGW | Image Width |
 | IMGH | Image Height |
 | ORFX/ORFY |   |
+
+Some of them have an extended header, if they allow "keyframes". It adds two more u32's.
+
+The Keyframe data is a 0x1C bytes long structure.
 
 # Data
 
