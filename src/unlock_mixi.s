@@ -4,11 +4,17 @@
 .set GetPLYIDToPlayerEntryTeam__Fii, 0x800BE084
 .set Savedata_getPlayeData_KizunaData__Fii, 0x80042368
 .set Savedata_getPlayerData__Fi, 0x80042314
+.set Savedata_SetWazaEnableFlag, 0x80042988
 
 .macro callFunction address
 	lis r12, \address@h
 	ori r12, r12, \address@l
 	mtctr r12
+	bctrl
+.endm
+
+.macro branchReg register
+	mtctr \register
 	bctrl
 .endm
 
@@ -20,11 +26,11 @@ cmpwi r4, 0
 bne func_epilogue
 
 ; Check if Asta is unlocked
-mr r4, r15
-li r3, 0x16b
-callFunction GetPLYIDToPlayerEntryTeam__Fii
-cmpwi r3, 0
-beq func_epilogue
+; mr r4, r15
+; li r3, 0x16b
+; callFunction GetPLYIDToPlayerEntryTeam__Fii
+; cmpwi r3, 0
+; beq func_epilogue
 
 ; Compare Fran - Asta kizuna
 lwz r3, 0(r22)
@@ -34,7 +40,7 @@ lha r0, 0(r3)
 cmpwi r0, 0x32 
 blt func_epilogue
 
-; Miximax unlock magic
+; Miximax unlock
 lwz r0, 0(r23)
 ori r0, r0, 0x10
 stw r0, 0(r23)
@@ -45,6 +51,11 @@ add r3, r20, r0
 li r0, 0xC
 stw r0, 0x1504(r3)
 stw r4, 0x1500(r20)
+
+; unlocks move
+li r3, 0x184
+li r4, 1
+callFunction Savedata_SetWazaEnableFlag
 
 ; Branching back to code
 func_epilogue:
