@@ -77,7 +77,7 @@ The Keyframe data is a 0x1C bytes long structure.
 
 # Data
 
-No proper name for them, loaded in `DCLoad`, most of the files from dat.bin.
+No proper name for them, loaded in `DCLoad`, most of the files from dat.bin. This format is used to store data structures.
 
 | Offset | Name | DataType | Notes |
 | --- | --- | --- | --- |
@@ -91,4 +91,4 @@ For each section:
 | 0x0 | Offset | u32 | |
 | 0x4 | Count | u32 | |
 
-If the file contains text `End` will point to a section that contains pointers to text pointers.
+When a file is loaded in memory, all the u32 that are treated as offsets are resolved to be pointers. It allows for quick memory access. `End` will point to a section that contains pointers to pointers in the file that may need to be fixed.
