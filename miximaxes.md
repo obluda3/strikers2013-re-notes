@@ -1,5 +1,5 @@
 # Miximaxes
-main.dol @0x804c8b90 => gMiximaxTable
+main.dol @0x804c8b90 (0x4c4c90) => gMiximaxTable
 
 | Offset | Name | DataType | Notes |
 | --- | --- | --- | --- |
