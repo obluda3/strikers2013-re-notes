@@ -37,6 +37,7 @@ File Table:
 | --- | --- | --- | --- |
 | 0x0 | Offset and Size | u32 | Offset = (OffSize >> Shift Factor) * Pad Factor<br />Size = (OffSize & Mask) * Mul Factor |
 
+Files are accessed using their index in a bin file + 10000x its archive index.
 Credits:
 - Onepiecefreak
 - Alpha
