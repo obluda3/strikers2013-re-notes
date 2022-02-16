@@ -9,6 +9,9 @@ Length: 0x8c, start of file: 0x1c
 | 0x6 | TP | u16 | TP Cost |
 | 0x8 | Element | u16 | 0 = Wind 1 = Wood 2 = Fire 3 = Earth 4 = Void |
 | 0xA | Status | u16 | 0 = Normal 1 = Long Shoot 2 = Block 3 = Chain 4 = Punch 1 5 = Punch 2 |
+| 0xC | Output Range | u16 | |
+| 0xE | Effect Range Assist | u16 | |
+| 0x10 | Effect Range | u16 | |
 | 0x14 | Co-Op Player Count | u16 | Number of players required to do the hissatsu |
 | 0x1A-0x2C | Users | u16 | ID's of the possible users |
 | 0x2E-0x40 | Co-Op Partners | u16 | ID's of the possible partners |
@@ -20,4 +23,4 @@ Length: 0x8c, start of file: 0x1c
 Other values are unknown
 
 Credits :
-- GalacticPirate for most of these values
+- GalacticPirate for Tier, Power, TP, Element, Status, Powerup indicator and Invocation Animation Timer
