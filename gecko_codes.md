@@ -221,7 +221,8 @@ C2068960 0000001B
 
 # Skip move animations
 
+**Author:** Obluda
+
 ```
-Skip move animation
 040e1728 48000024
 ```
