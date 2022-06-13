@@ -75,9 +75,9 @@ Some of them have an extended header, if they allow "keyframes". It adds two mor
 
 The Keyframe data is a 0x1C bytes long structure.
 
-# Data
+# Data cache
 
-No proper name for them, loaded in `DCLoad`, most of the files from dat.bin. This format is used to store data structures.
+Loaded with `DCLoad`, most of the files from dat.bin. This format is used to store data structures.
 
 | Offset | Name | DataType | Notes |
 | --- | --- | --- | --- |
