@@ -71,7 +71,7 @@ Here are the different fields:
 | IMGH | Image Height |
 | ORFX/ORFY |   |
 
-Some of them have an extended header, if they allow "keyframes". It adds two more u32's.
+Some of them have an extended header, if they allow "keyframes". It adds two more u32's (success values), and one keyframe count.
 
 The Keyframe data is a 0x1C bytes long structure.
 
