@@ -33,7 +33,7 @@ Size: 0x44
 | 0x38 | Level 1 Catch | u16 |
 | 0x3A | Level 2 Catch | u16 |
 | 0x3C | Level 3 Catch | u16 |
-| 0x3E | SP Shoot | u16 |
+| 0x40 | SP Shoot | u16 |
 
 # Section 2 - Stats
 Size: 0x14
