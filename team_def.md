@@ -22,6 +22,9 @@ Size: 0x44
 | Offset | Name | DataType |
 | --- | --- | --- |
 | 0x0 | PlayerID | u16 |
+| 0x2 | Kit Number | u16 |
+| 0x8 | Stats Index | u32 |
+| 0x10 | Flag | u32 |
 | 0x14 | Main Portrait | u32 |
 | 0x18 | Left Portrait | u32 |
 | 0x1C | Right Portrait | u32 |
