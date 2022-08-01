@@ -19,9 +19,22 @@ Header:
 Credits:
 - Alpha
 
+# TEXCUT
+
+Little endian. No Header, just an array of the SHD_TEXCUT (0x10 bytes long) struct:
+
+| Offset | Name | DataType |
+| --- | --- | --- |
+| 0x0 | X Offset | u16 |
+| 0x2 | Y Offset | u16 |
+| 0x4 | Width | u16 |
+| 0x6 | Height | u16 |
+
 # SSAD
 
-*Shade Sprite Animation Data* - Used for layout and sprite animations.
+*Shade Sprite Animation Data* - Used for layout and sprite animations. Little endian
+
+
 
 Header (length 0x1C):
 | Offset | Name | DataType | Notes |
