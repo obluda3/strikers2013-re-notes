@@ -15,6 +15,7 @@ Length: 0x8c, start of file: 0x1c
 | 0x14 | Co-Op Player Count | u16 | Number of players required to do the hissatsu |
 | 0x1A-0x2C | Users | u16 | ID's of the possible users |
 | 0x2E-0x40 | Co-Op Partners | u16 | ID's of the possible partners |
+| 0x42-0x46 | User Priority | u16 | In coop moves, defines the order of the players |
 | 0x4E | Description | u16 | Index of the description entry of the text file |
 | 0x56 | Users | u16 | Index of the users entry of the text file |
 | 0x86 | Power-up indicator | u16 | 0 = Normal 1 = Keshin 2 = Armed 4 = Mix |
