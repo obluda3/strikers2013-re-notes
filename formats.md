@@ -52,37 +52,37 @@ Each field is structured as follows:
 | 0x4 | Length | u32 | |
 
 Here are the different fields:
-| Field | Description |
-| --- | --- |
-| PART | |
-| NAME | Name of the entry |
-| AREA | 4 u32s => rectangle (x1,y1,x2,y2) |
-| ORGX/ORGY | origin x/y  |
-| TBDT |   |
-| MYID |   |
-| PAID |   |
-| CHID |   |
-| PCID |   |
-| SUCD |   |
-| PRIO |   |
-| POSX | X Position |
-| POSY | Y Position |
-| ANGL | Rotation angle  |
-| SCAX | X Scale |
-| SCAY | Y Scale |
-| TRAN |   |
-| HIDE |   |
-| FLPH | Flip H |
-| FLPV | Flip V |
-| UDAT |   |
-| PCOL |   |
-| PALT |   |
-| VERT |   |
-| IMGX | Image X |
-| IMGY | Image Y |
-| IMGW | Image Width |
-| IMGH | Image Height |
-| ORFX/ORFY |   |
+| Field | Description | Has KeyFrame |
+| --- | --- | --- |
+| PART | | |
+| NAME | Name of the entry | | 
+| AREA | 4 u32s => rectangle (x1,y1,x2,y2) | |
+| ORGX/ORGY | origin x/y  | |
+| TBDT |   | |
+| MYID |   | |
+| PAID |   | |
+| CHID |   | |
+| PCID |   | |
+| SUCD |   | |
+| PRIO |   | |
+| POSX | X Position | X |
+| POSY | Y Position | X |
+| ANGL | Rotation angle | X |
+| SCAX | X Scale | X |
+| SCAY | Y Scale | X |
+| TRAN |   | X | 
+| HIDE |   | X | 
+| FLPH | Flip H | X |
+| FLPV | Flip V | X |
+| UDAT |   | X |
+| PCOL |   | X | 
+| PALT |   | X |
+| VERT |   | X |
+| IMGX | Image X | X |
+| IMGY | Image Y | X |
+| IMGW | Image Width | X |
+| IMGH | Image Height | X |
+| ORFX/ORFY |   | X |
 
 Some of them have an extended header, if they allow "keyframes". It adds two more u32's (success values), and one keyframe count.
 
