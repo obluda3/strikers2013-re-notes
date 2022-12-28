@@ -14,3 +14,4 @@ Length: 0x64
 | 0x38 | Effect type | |
 | 0x3C | Special Effect | |
 | 0x40 | Special Effect 2 | |
+| 0x44 | Computer Preview | |
