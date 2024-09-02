@@ -29,4 +29,4 @@ Length: 0x64
 | 0x58 | Computer Opponent 2 | |
 | 0x5A | Computer Opponent 3 | |
 | 0x60 | Sound effects | |
-
+| 0x64 | Character voiceline | |
