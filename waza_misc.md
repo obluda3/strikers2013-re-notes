@@ -11,7 +11,7 @@ Length: 0x64
 | 0x8 | Move name | Index to the main text file |
 | 0xC | Move sorting name | Index to the main text file |
 | 0x10 | Move name | Index to the main text file (seems to be the same as 0x8) |
-| 0x14 | FileInfo Index | |
+| 0x14 | FileInfo Index | FileInfo is the structure of the second section |
 | 0x18 | Skip start | |
 | 0x1C | Skip end | |
 | 0x2C | Ball Effect | Shoots only |
