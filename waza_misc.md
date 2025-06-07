@@ -6,7 +6,7 @@ Length: 0x64
 
 | Offset | Name | Notes |
 | --- | --- | --- |
-| 0x0 | Move Type | |
+| 0x0 | Move Type | 0 = shoot, 1 = dribble, 2 = defense, 3 = catch |
 | 0x4 | Move name (Unused) | |
 | 0x8 | Move name | Index to the main text file |
 | 0xC | Move sorting name | Index to the main text file |
